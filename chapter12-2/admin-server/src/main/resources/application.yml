@@ -1,0 +1,48 @@
+
+logging:
+  file: "logs/boot-admin-sample.log"
+
+spring:
+  application:
+    name: service-admin
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,activiti
+      turbine:
+        clusters: default
+        location: service-turbine
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    metadata-map:
+#      user.name: admin
+#      user.password: 123456
+
+
+endpoints:
+  health:
+    sensitive: false
+    enabled: true
+  actuator:
+    enabled: true
+    sensitive: false
+  beans:
+    sensitive: false
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+server:
+  port: 3002
+security.basic.enabled: false
+#security:
+#  user:
+#    name: admin
+#    password: 123456
+#

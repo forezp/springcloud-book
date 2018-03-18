@@ -1,0 +1,31 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 5000
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    hiapi:
+      path: /hiapi/**
+      serviceId: eureka-client
+#      url: http://localhost:8762  #这样写不会做负载均衡
+#      serviceId: hiapi-v1
+    ribbonapi:
+      path: /ribbonapi/**
+      serviceId: eureka-ribbon-client
+    feignapi:
+      path: /feignapi/**
+      serviceId: eureka-feign-client
+#      stripPrefix: false  有该字段，请求的"feignapi"会被转发到
+#zuul.prefix: /v1  #加个前缀
+#ribbon:
+#  eureka:
+#    enabled: false
+#
+#hiapi-v1:
+#  ribbon:
+#    listOfServers: http://localhost:8762,http://localhost:8763

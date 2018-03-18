@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	>
+<body>
+<div>
+    <table >
+        <thead>
+        <tr>
+            <td>博客编号</td>
+            <td>博客名称</td>
+            <td>博客描述</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="blog: ${blogModel.blogsList}">
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.name}"></td>
+            <td th:text="${blog.content}"></td>
+            <td>
+                <div >
+                    <a th:href="@{'/blogs/' + ${blog.id}+'/deletion'}">
+                        删除
+                    </a>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

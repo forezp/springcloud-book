@@ -1,0 +1,28 @@
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    user-service:
+        path: /userapi/**
+        url: http://localhost:8762
+
+    account-service:
+        path: /accountapi/**
+        serviceId: account-service
+
+server:
+  port: 8765

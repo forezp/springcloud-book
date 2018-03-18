@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="service-auth" />
+        <module name="service-hi" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter1" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="service-auth" target="1.8" />
+      <module name="service-hi" target="1.8" />
+      <module name="service-ribbon" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+    <head>
+        <title>Hello Spring Security</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
+    </head>
+    <body>
+
+        <h1>Hello Spring Security</h1>
+        <p>这个界面没有受保护，你可以进已被保护的界面.</p>
+
+        <div th:fragment="logout"  sec:authorize="isAuthenticated()">
+            登录用户: <span sec:authentication="name"></span> |
+            用户角色: <span sec:authentication="principal.authorities"></span>
+            <div>
+                <form action="#" th:action="@{/logout}" method="post">
+                    <input type="submit" value="登出" />
+                </form>
+            </div>
+        </div>
+
+        <ul>
+            <li>点击<a href="/user/index" th:href="@{/user/index}">去/user/index保护的界面</a></li>
+        </ul>
+    </body>
+</html>

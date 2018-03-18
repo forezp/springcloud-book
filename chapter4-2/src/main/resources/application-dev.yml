@@ -1,0 +1,9 @@
+server:
+  port: 8082
+management:
+  port: 9001
+  security:
+    enabled: false
+endpoints:
+  shutdown:
+    enabled: true

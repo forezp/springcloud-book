@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="account-service" />
+        <module name="admin-service" />
+        <module name="blog-service" />
+        <module name="blogs-service" />
+        <module name="common" />
+        <module name="config-server" />
+        <module name="eureka-server" />
+        <module name="gateway-service" />
+        <module name="log-service" />
+        <module name="monitor-service" />
+        <module name="uaa-service" />
+        <module name="user-service" />
+        <module name="zipkin-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account-service" target="1.8" />
+      <module name="admin-service" target="1.8" />
+      <module name="auth-service" target="1.8" />
+      <module name="blog-service" target="1.8" />
+      <module name="blogs-service" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="log-service" target="1.8" />
+      <module name="monitor-service" target="1.8" />
+      <module name="SpringCloudInAction" target="1.8" />
+      <module name="uaa-service" target="1.8" />
+      <module name="user-service" target="1.8" />
+      <module name="zipkin-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
