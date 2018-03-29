@@ -46,7 +46,7 @@ public class UserServiceDetail implements UserDetailsService {
             throw new UserLoginException("error password");
         }
         // 获取token
-        JWT jwt=client.getToken("Basic d2ViX2FwcDo=","password",username,password);
+        JWT jwt=client.getToken("Basic dXNlci1zZXJ2aWNlOjEyMzQ1Ng==","password",username,password);
         // 获得用户菜单
         if(jwt==null){
             throw new UserLoginException("error internal");
