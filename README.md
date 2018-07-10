@@ -17,6 +17,6 @@
 
 ### 怎么使用源码
 
-打开开发工具IDEA，然后import具体的章节的源码，注意不是import 整个跟目录。例如：
+打开开发工具IDEA，然后file-open具体的章节的源码，注意不是open 整个跟目录。例如：
 
 ￼![image.png](https://upload-images.jianshu.io/upload_images/2279594-5337ed9945c271fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
