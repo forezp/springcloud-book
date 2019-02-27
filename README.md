@@ -1,5 +1,7 @@
 # springcloud-book
 
+#### 获取SpringCloud 、Spring Boot视频：https://www.fangzhipeng.com/share/2017/10/01/resource-sharing.html
+
 <div>
     <p align="center">
         <img src="https://www.fangzhipeng.com/img/avatar.jpg" width="258" height="258"/>
