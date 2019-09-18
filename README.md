@@ -2,6 +2,10 @@
 
 #### gitee下载地址：https://gitee.com/forezp/springcloud-book
 
+### 第二版源码地址
+
+https://github.com/forezp/springcloud-book-greenwich
+
 ##### 获取SpringCloud 、Spring Boot视频：https://www.fangzhipeng.com/share/2017/10/01/resource-sharing.html
 
 <div>
